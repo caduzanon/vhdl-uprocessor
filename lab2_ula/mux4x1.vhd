@@ -1,0 +1,19 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity mux4x1 is
+   port( sel   : in unsigned(1 downto 0);
+         entr0,entr1,entr2,entr3 : in unsigned(15 downto 0);
+         saida                   : out unsigned(15 downto 0)
+   );
+end entity;
+
+architecture a_mux4x1 of mux4x1 is
+begin
+   saida <=    entr0    when sel="00" else
+               entr1    when sel="01" else
+               entr2    when sel="10" else
+               entr3    when sel="11" else
+               "0000000000000000";     -- esse '0' é pra quando "der pau" em sel
+end architecture;
