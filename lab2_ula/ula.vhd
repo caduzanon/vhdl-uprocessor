@@ -34,14 +34,14 @@ begin
 
     out_soma <= in_a + in_b;
     out_sub <= in_a - in_b;
-    out_cmp <= "1111111111111111" when in_a>in_b else
+    out_cmp <= "1111111111111111" when signed(in_a) > signed(in_b) else
               "0000000000000000" when in_a<=in_b else
               "0000000000000000";
     out_lsl <= in_a(14 downto 0) & '0';
 
     flag_z <= '1' when saida_mux = "0000000000000000" else '0';
     flag_v <= ((not in_a(15) and not in_b(15)) and saida_mux(15)) or (in_a(15) and in_b(15) and not saida_mux(15)) when sel_op_ula = "00" else
-              (in_a(15) and not in_b(15)) and not saida_mux(15) when sel_op_ula = "01" else
+              ((not in_a(15) and in_b(15)) and saida_mux(15)) or ((in_a(15) and not in_b(15)) and not saida_mux(15)) when sel_op_ula = "01" else
               in_a(15) xor in_a(14) when sel_op_ula = "11" else
               '0';
               
