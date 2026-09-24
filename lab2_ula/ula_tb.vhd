@@ -35,74 +35,73 @@ begin
     process
     begin
         sel_op_ula <= "00";
-
-        in_a <= to_unsigned(15, 16);
-        in_b <= to_unsigned(25, 16);
+        in_a <= "0000000000001111";
+        in_b <= "0000000000011001";
         wait for 50 ns;
 
-        in_a <= unsigned(to_signed(-10, 16));
-        in_b <= unsigned(to_signed(-5, 16));
+        in_a <= "1111111111110110";
+        in_b <= "1111111111111011";
         wait for 50 ns;
 
-        in_a <= to_unsigned(50, 16);
-        in_b <= unsigned(to_signed(-20, 16));
+        in_a <= "0000000000110010";
+        in_b <= "1111111111101100";
         wait for 50 ns;
 
-        in_a <= to_unsigned(20000, 16);
-        in_b <= to_unsigned(20000, 16);
+        in_a <= "0100111000100000";
+        in_b <= "0100111000100000";
         wait for 50 ns;
 
-        in_a <= unsigned(to_signed(-20000, 16));
-        in_b <= unsigned(to_signed(-20000, 16));
+        in_a <= "1011000111100000";
+        in_b <= "1011000111100000";
         wait for 50 ns;
 
-        in_a <= x"FFFF";
-        in_b <= x"0001";
+        in_a <= "1111111111111111";
+        in_b <= "0000000000000001";
         wait for 50 ns;
 
         sel_op_ula <= "01";
 
-        in_a <= to_unsigned(50, 16);
-        in_b <= to_unsigned(20, 16);
+        in_a <= "0000000000110010";
+        in_b <= "0000000000010100";
         wait for 50 ns;
 
-        in_a <= to_unsigned(10, 16);
-        in_b <= to_unsigned(30, 16);
+        in_a <= "0000000000001010";
+        in_b <= "0000000000011110";
         wait for 50 ns;
 
-        in_a <= unsigned(to_signed(-10, 16));
-        in_b <= unsigned(to_signed(-15, 16));
+        in_a <= "1111111111110110";
+        in_b <= "1111111111110001";
         wait for 50 ns;
 
-        in_a <= to_unsigned(25000, 16);
-        in_b <= unsigned(to_signed(-15000, 16));
+        in_a <= "0110000110101000";
+        in_b <= "1100010101101000";
         wait for 50 ns;
 
-        in_a <= unsigned(to_signed(-25000, 16));
-        in_b <= to_unsigned(15000, 16);
+        in_a <= "1001111001011000";
+        in_b <= "0011101010011000";
         wait for 50 ns;
 
         sel_op_ula <= "10";
 
-        in_a <= to_unsigned(100, 16);
-        in_b <= to_unsigned(25, 16);
+        in_a <= "0000000001100100";
+        in_b <= "0000000000011001";
         wait for 50 ns;
 
-        in_a <= to_unsigned(25, 16);
-        in_b <= to_unsigned(100, 16);
+        in_a <= "0000000000011001";
+        in_b <= "0000000001100100";
         wait for 50 ns;
 
-        in_a <= to_unsigned(50, 16);
-        in_b <= to_unsigned(50, 16);
+        in_a <= "0000000000110010";
+        in_b <= "0000000000110010";
         wait for 50 ns;
 
         sel_op_ula <= "11";
 
-        in_a <= x"000F";
+        in_a <= "0000000000001111";
         in_b <= (others => '0');
         wait for 50 ns;
 
-        in_a <= x"4000";
+        in_a <= "0100000000000000";
         in_b <= (others => '0');
         wait for 50 ns;
 
