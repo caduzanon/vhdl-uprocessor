@@ -68,14 +68,14 @@ begin
                     else "0000000000000000";
     
     
-    rd_2 <= do_r0   when reg_read_1 = "000" else
-            do_r1   when reg_read_1 = "001" else
-            do_r2   when reg_read_1 = "010" else
-            do_r3   when reg_read_1 = "011" else
-            do_r4   when reg_read_1 = "100" else
-            do_r5   when reg_read_1 = "101" else
-            do_r6   when reg_read_1 = "110" else
-            do_r7   when reg_read_1 = "111"
+    rd_2 <= do_r0   when reg_read_2 = "000" else
+            do_r1   when reg_read_2 = "001" else
+            do_r2   when reg_read_2 = "010" else
+            do_r3   when reg_read_2 = "011" else
+            do_r4   when reg_read_2 = "100" else
+            do_r5   when reg_read_2 = "101" else
+            do_r6   when reg_read_2 = "110" else
+            do_r7   when reg_read_2 = "111"
                     else "0000000000000000";
 
 end architecture;
