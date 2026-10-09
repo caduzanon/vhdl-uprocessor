@@ -1,0 +1,37 @@
+v 4
+file . "decoder1x8.vhd" "2503d030acd391c83476ae2ef9bb22715999ecfb" "20261007233239.786":
+  entity decoder1x8 at 1( 0) + 0 on 65;
+  architecture a_decoder1x8 of decoder1x8 at 12( 269) + 0 on 66;
+file . "ula_tb.vhd" "c64c39fed17c56c02be460460fbc811562ff3fc3" "20261007233202.697":
+  entity ula_tb at 1( 0) + 0 on 63;
+  architecture a_ula_tb of ula_tb at 8( 100) + 0 on 64;
+file . "ula_bancoReg_acc_tb.vhd" "2d111c97602b4ece8c06657be31192bbda7e1c78" "20261008014947.725":
+  entity ula_bancoreg_acc_tb at 1( 0) + 0 on 85;
+  architecture a_ula_bancoreg_acc_tb of ula_bancoreg_acc_tb at 8( 113) + 0 on 86;
+file . "dois_acumuladores.vhd" "46422e626ff3dc483f49030c31bf22474fc109f7" "20260928121240.299":
+  entity dois_acumuladores at 1( 0) + 0 on 29;
+  architecture a_dois_acumuladores of dois_acumuladores at 18( 524) + 0 on 30;
+file . "banco_reg16bits.vhd" "80d0d527b5f915d4e713c8f57e68af39af86c418" "20261007233255.495":
+  entity banco_reg16bits at 1( 0) + 0 on 69;
+  architecture a_banco_reg16bits of banco_reg16bits at 18( 544) + 0 on 70;
+file . "reg16bits.vhd" "614b2080c9cc129d3f1db88dce68d11ab4940181" "20261007233248.999":
+  entity reg16bits at 1( 0) + 0 on 67;
+  architecture a_reg16bits of reg16bits at 14( 303) + 0 on 68;
+file . "reg16bits_tb.vhd" "f3df8cb443e0e5e9bad0e4010a45fc9b6535264b" "20260926202618.284":
+  entity reg16bits_tb at 1( 0) + 0 on 19;
+  architecture a_reg16bits_tb of reg16bits_tb at 8( 106) + 0 on 20;
+file . "banco_reg16bits_tb.vhd" "73444c96b71fc81e38aa9af8ffc80efe46e9ca88" "20261007172307.439":
+  entity banco_reg16bits_tb at 1( 0) + 0 on 51;
+  architecture a_banco_reg16bits_tb of banco_reg16bits_tb at 8( 112) + 0 on 52;
+file . "acumulador.vhd" "ff187deb81742ced30d366e4a8ca7736fc26e965" "20261007233301.854":
+  entity acumulador at 1( 0) + 0 on 71;
+  architecture a_acumulador of acumulador at 14( 331) + 0 on 72;
+file . "ula_bancoReg_acc.vhd" "76320b4fefb444551aded8c88119fa2310809c9b" "20261007234818.347":
+  entity ula_bancoreg_acc at 1( 0) + 0 on 79;
+  architecture a_ula_bancoreg_acc of ula_bancoreg_acc at 32( 1164) + 0 on 80;
+file . "ula.vhd" "9219f3752e342e437270df1dfb11f9f13257b888" "20261007233308.905":
+  entity ula at 1( 0) + 0 on 73;
+  architecture a_ula of ula at 24( 729) + 0 on 74;
+file . "mux4x1.vhd" "0b2d1ed972ce124b66fbf9743f430ae8d575ac2d" "20261007232842.623":
+  entity mux4x1 at 1( 0) + 0 on 59;
+  architecture a_mux4x1 of mux4x1 at 12( 270) + 0 on 60;
